@@ -1,40 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pioneer Bank</title>
-    <link rel="stylesheet" href="index.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-</head>
-<body>
-   <section id="login_side">
-        <!-- This is pioneer bank header section -->
-    <header>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <section id="login_side">
+      <!-- This is pioneer bank header section -->
+      <header>
         <div class="container">
-            <h1 class="text-center">Welcome to Pioneer-Bank</h1>
+          <h1 class="text-center">Welcome to Pioneer-Bank</h1>
         </div>
-    </header>
-    <!-- This is pioneer bank login-area  -->
+      </header>
+      <!-- This is pioneer bank login-area  -->
 
-    <!-- This is our pioneer body main part -->
-    <main>
+      <!-- This is our pioneer body main part -->
+      <main>
         <div class="login-area">
-            <div class="submit-area">
-                <h4>Login</h4>
-                <input type="text" class="form-control" placeholder="enter your email">
-                <br>
-                <input type="password" class="form-control" name="" id="" placeholder="enter your password">
-                <br>
-                <button id="login" class="btn btn-success">Enter</button>
-            </div>
+          <div class="submit-area">
+            <h4>Login</h4>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="enter your email"
+            />
+            <br />
+            <input
+              type="password"
+              class="form-control"
+              name=""
+              id=""
+              placeholder="enter your password"
+            />
+            <br />
+            <button id="login" class="btn btn-success">Enter</button>
+          </div>
         </div>
-    </main>
+      </main>
+    </section>
+    <!-- transation area -->
 
-   </section>
+    <section>
+      <div id="transation_area">
+        <div class="text-center m-5">
+          <h1>Transation History</h1>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="deposit status">
+              <h5>Deposit</h5>
+              <h2>$ <span id="currentDeposit">00</span></h2>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="withdraw status">
+              <h5>Withdraw</h5>
+              <h2>$ <span id="currentWithdraw">00</span></h2>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="balance status">
+              <h5>Balance</h5>
+              <h2>$ <span id="currentBalance">1240</span></h2>
+            </div>
+          </div>
+        </div>
+        <!-- deposit section/withdraw section/balance section -->
+        <div class="row">
+          <div class="col-md-6">
+            <div class="submit-area">
+              <h4>Deposit</h4>
+              <input
+                id="depositAmount"
+                type="text"
+                class="form-control"
+                placeholder="$ amount you want to deposit"
+              />
+              <br />
+              <button id="addDeposit" class="btn btn-success">Deposit</button>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="submit-area">
+              <h4>Withdraw</h4>
+              <input id="withdrawAmount"
+                type="text"
+                class="form-control"
+                placeholder="$ amount you want to withdraw"
+              />
+              <br />
+              <button id="addwithdraw" class="btn btn-success">Withdraw</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- add javascript file link  -->
-    <script src="index.js">
-
-    </script>
-</body>
+    <script src="index.js"></script>
+  </body>
 </html>
